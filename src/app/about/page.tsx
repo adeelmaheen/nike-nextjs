@@ -1,7 +1,7 @@
 
 import About from "@/components/about"
 import Views from "@/components/views"
-import Freedelivery from "@/components/free"
+
 
 
 
@@ -10,7 +10,7 @@ function AboutPage(){
        <div>
          <About />
          <Views />
-      <Freedelivery/>
+      
          {/* about cahnging */}
        </div>
     )

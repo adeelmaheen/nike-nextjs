@@ -4,7 +4,7 @@ export default function SNKRSPage() {
         <h1 className="text-4xl font-bold mb-6">SNKRS</h1>
         <p>Your destination for the latest and greatest Nike sneakers.</p>
       </div>
-    )
+    );
   }
   
   
