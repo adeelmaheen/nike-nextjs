@@ -1,11 +1,13 @@
+import Announcement from '../components/Announcement'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import AnnouncementBar from "@/components/Announcement";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+
+
 config.autoAddCss = false;
 
 const geistSans = localFont({
@@ -34,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AnnouncementBar />
+        <Announcement />
         <Header/>
         {children}
         <Footer/>
