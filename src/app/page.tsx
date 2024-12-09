@@ -1,6 +1,6 @@
-import Hero from "@/components/hero";
-import FreshSales from "@/components/freshsale";
-
+import CarouselSize from "@/components/Best";
+import FreshSales from "@/components/Freshsale";
+import Hero from "@/components/Hero";
 
 
 export default function Home() {
@@ -8,8 +8,8 @@ export default function Home() {
       <div >
         
          <Hero/>
-         <FreshSales/>
-      
+         <CarouselSize/>
+         <FreshSales/>      
       </div>
     )
 }

@@ -1,76 +1,73 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYoutube, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'; // Social icons
-import { faArrowCircleRight, faCopyright } from '@fortawesome/free-solid-svg-icons'; // Social icons
+import { FaTwitter, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";  // Import location icon
 
 export default function Footer() {
   return (
-    <main className="bg-neutral-900 flex flex-col">
-      <div className="w-full sm:h-auto lg:h-[350px] bg-neutral-900 flex justify-center items-center py-6">
-        <div className="w-full sm:px-4 flex flex-col lg:flex-row justify-evenly text-white">
-          <div className="w-full sm:w-full md:w-[250px] lg:w-[200px] mb-8 sm:mb-4">
-            <h1 className="font-bold text-xl mb-4">Exclusive</h1>
-            <ul>
-              <li className="pt-2 cursor-pointer">Subscribe</li>
-              <li className="pt-2 cursor-pointer">Get 10% off your first order</li>
-              <li className="mt-3 cursor-pointer py-1 border flex justify-center">
-                <input type="text" placeholder="Enter your Email" className="bg-gray-900 border-none text-white py-1 px-2 w-full" />
-                <FontAwesomeIcon icon={faArrowCircleRight} className="text-xl sm:hidden md:block" />
-              </li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-full md:w-[250px] lg:w-[200px] mb-8 sm:mb-4">
-            <h1 className="font-bold text-xl mb-4">Support</h1>
-            <ul>
-              <li className="pt-1 cursor-pointer">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
-              <li className="pt-1 cursor-pointer">exclusive@gmail.com</li>
-              <li className="pt-1 cursor-pointer">+88015-88888-9999</li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-full md:w-[250px] lg:w-[200px] mb-8 sm:mb-4">
-            <h1 className="font-bold text-xl mb-4">Account</h1>
-            <ul>
-              <li className="pt-1 cursor-pointer">My Account</li>
-              <li className="pt-1 cursor-pointer">Login / Register</li>
-              <li className="pt-1 cursor-pointer">Cart</li>
-              <li className="pt-1 cursor-pointer">Wishlist</li>
-              <li className="pt-1 cursor-pointer">Shop</li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-full md:w-[250px] lg:w-[200px] mb-8 sm:mb-4">
-            <h1 className="font-bold text-xl mb-4">Quick Link</h1>
-            <ul>
-              <li className="pt-1 cursor-pointer">Privacy Policy</li>
-              <li className="pt-1 cursor-pointer">Terms Of Use</li>
-              <li className="pt-1 cursor-pointer">FAQ</li>
-              <li className="pt-1 cursor-pointer">Contact</li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-full md:w-[250px] lg:w-[200px] mb-8 sm:mb-4">
-            <h1 className="font-bold text-xl pb-4">Social Links</h1>
-            <ul className="list-none flex gap-x-3 justify-center sm:justify-start">
-              <li>
-                <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faYoutube} className="text-3xl mr-2 transition duration-200 ease-out hover:scale-105 hover:ease-in" />
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} className="text-3xl mr-2 transition duration-200 ease-out hover:scale-105 hover:ease-in" />
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faFacebook} className="text-3xl mr-2 transition duration-200 ease-out hover:scale-105 hover:ease-in" />
-                </Link>
-              </li>
-            </ul>
-          </div>
+    <footer className="bg-black text-white py-8 px-6  ">
+<div className="flex justify-between items-center flex-wrap gap-10" >
+<div className="flex justify-start  gap-10 flex-wrap" >
+          {/* Column 1 */}
+          <div>
+        <h3 className="text-sm font-semibold mb-4">FIND A STORE</h3>
+        <ul className="space-y-2 text-sm">
+          <li><Link href="#" className="hover:underline">Become Link Member</Link></li>
+          <li><Link href="#" className="hover:underline">Sign Up for Email</Link></li>
+          <li><Link href="#" className="hover:underline">Student Discounts</Link></li>
+        </ul>
+      </div>
+
+      {/* Column 2 */}
+      <div>
+        <h3 className="text-sm font-semibold mb-4">GET HELP</h3>
+        <ul className="space-y-2 text-sm">
+          <li><Link href="#" className="hover:underline">Order Status</Link></li>
+          <li><Link href="#" className="hover:underline">Delivery</Link></li>
+          <li><Link href="#" className="hover:underline">Returns</Link></li>
+          <li><Link href="#" className="hover:underline">Payment Options</Link></li>
+          <li><Link href="#" className="hover:underline">Contact Us on Nike.com</Link></li>
+          <li><Link href="#" className="hover:underline">Contact Us on All Other Inquiries</Link></li>
+        </ul>
+      </div>
+
+      {/* Column 3 */}
+      <div>
+        <h3 className="text-sm font-semibold mb-4">ABOUT NIKE</h3>
+        <ul className="space-y-2 text-sm">
+          <li><Link href="#" className="hover:underline">News</Link></li>
+          <li><Link href="#" className="hover:underline">Careers</Link></li>
+          <li><Link href="#" className="hover:underline">Investors</Link></li>
+          <li><Link href="#" className="hover:underline">Sustainability</Link></li>
+        </ul>
+      </div>
+</div>
+
+      {/* Column 4 (Social Media Icons) */}
+      <div className="flex justify-start lg:justify-end items-start gap-4">
+        <FaTwitter className="text-lg cursor-pointer hover:text-gray-400" />
+        <FaFacebook className="text-lg cursor-pointer hover:text-gray-400" />
+        <FaYoutube className="text-lg cursor-pointer hover:text-gray-400" />
+        <FaInstagram className="text-lg cursor-pointer hover:text-gray-400" />
+      </div>
+</div>
+
+      {/* Bottom Section */}
+      <div className="mt-8 flex flex-wrap justify-between items-center text-xs text-gray-400">
+        {/* Country and Copyright */}
+        <div className="flex mb-4 md:mb-0 gap-2">
+          <IoLocationOutline className='' />
+          <p>India</p>
+          <p>© 2023 Nike, Inc. All Rights Reserved</p>
+        </div>
+
+        {/* Links */}
+        <div className="flex flex-wrap gap-4">
+          <Link href="#" className="hover:underline">Guides</Link>
+          <Link href="#" className="hover:underline">Terms of Sale</Link>
+          <Link href="#" className="hover:underline">Terms of Use</Link>
+          <Link href="#" className="hover:underline">Nike Privacy Policy</Link>
         </div>
       </div>
-      <p className="text-white text-center text-sm pb-4">
-        <FontAwesomeIcon icon={faCopyright} className="text-lg mr-3" /> Copyright Rimel 2022. All rights reserved
-      </p>
-    </main>
+    </footer>
   );
 }

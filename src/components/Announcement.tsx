@@ -1,44 +1,25 @@
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
-import blackmen from "../../public/assests/blackmen.png"
+import blackmen from "../../public/assests/blackmen.png";
 
 function AnnouncementBar() {
   return (
-    
-    <div className='w-full bg-gray-100 text-black flex justify-between items-center p-2 sm:h-[40px] md:h-[30px] lg:h-[38px] xl:h-[48px] 2xl:h-[50px]'>
-      {/* Left side */}
-      <div className='flex items-center gap-2 pl-4'>
-      <Image src={blackmen} alt='blackmen'/>
-        
-        
-      </div>
-
-      {/* Right side */}
-      <div className='flex items-end gap-2'>
-      <div className="hidden md:flex gap-4 pr-4">
-          <Link href="/find-store" className="hover:underline">
-            Find a Store
-          </Link>
-          <span>|</span>
-          <Link href="/contact" className="hover:underline">
-            Help
-          </Link>
-          <span>|</span>
-          <Link href="/about" className="hover:underline">
-            Join Us
-          </Link>
-          <span>|</span>
-          <Link href="/signup" className="hover:underline">
-            Sign In
-          </Link>
-        </div>
-    
-       
+    <>
+    {/* Top bar */}
+    <div className="bg-[#fafafa] flex justify-between items-center px-6 py-2 md:text-[11px] sm:text-[9px] text-[8px] font-medium text-gray-500">
+      <Image src={blackmen} alt={''} width={24} height={24}/>
+      <div>
+      
+    </div>
+      <div className="flex md:gap-4 sm:gap-3 gap-2">
+        <Link href="/location" className="hover:text-gray-800">Find Link Store</Link>
+        <Link href="/featured" className="hover:text-gray-800">Help</Link>
+        <Link href="/joinin" className="hover:text-gray-800">Join Us</Link>
+        <Link href="/joinus" className="hover:text-gray-800">Sign In</Link>
       </div>
     </div>
+    </>
+   
   );
 }
 

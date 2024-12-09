@@ -1,3 +1,9 @@
+:root {
+  --border: 214.3 31.8% 91.4%; /* Light gray border */
+  --input: 214.3 31.8% 91.4%;  /* Same as border for inputs */
+  --ring: 214.3 31.8% 91.4%;   /* Optional, for focus ring */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,8 +66,7 @@
   * {
     @apply border-border;
   }
-  body {
+  /* body {
     @apply bg-background text-foreground;
-  }
+  } */
 }
-
